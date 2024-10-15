@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal blog about tech, programming, and tutorials">
+  <meta name="keywords" content="tech, blog, programming, tutorials, affiliate marketing, ads">
+  <meta name="author" content="Your Name">
+  <title>My Tech Blog</title>
+  
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Bootstrap CSS for responsiveness (optional) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Tech Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dark Mode Toggle Button -->
+  <div class="container mt-3">
+    <button id="darkModeToggle" class="btn btn-dark">Switch to Dark Mode</button>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <div class="row">
+      <!-- Blog Post Section -->
+      <div class="col-md-8">
+        
+        <!-- Home Section -->
+        <section id="home">
+          <h2>Welcome to My Tech Blog!</h2>
+          <p>This is a place where I share my thoughts on technology, programming, and tutorials. Join me as I explore the latest trends and provide helpful insights!</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Hi! I'm Your Name, a tech enthusiast and software developer. I love coding and sharing knowledge with others. This blog is a reflection of my passion for technology and teaching.</p>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+          <h2>Latest Blog Posts</h2>
+          <article class="mb-5">
+            <h3>Best Programming Tips for Beginners</h3>
+            <p>In this post, we'll explore some of the most effective programming tips for beginners to get started in coding. Learn how to approach coding challenges and practice efficient programming methods to become a pro!</p>
+            <a href="#">Read more</a>
+          </article>
+          <article class="mb-5">
+            <h3>Top 5 Web Development Tools You Should Know</h3>
+            <p>These web development tools will help you save time, improve productivity, and create stunning websites. Whether you're a front-end or back-end developer, these tools are essential for your toolkit.</p>
+            <a href="#">Read more</a>
+          </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p>If you have any questions, feel free to reach out to me through the contact form below or connect with me on social media.</p>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </section>
+
+        <!-- Google AdSense Ad Placeholder -->
+        <div class="ad-placeholder">
+          AdSense Ad Placeholder
+        </div>
+      </div>
+
+      <!-- Sidebar Section -->
+      <div class="col-md-4 sidebar">
+        <!-- Categories -->
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">Programming</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Freelancing</a></li>
+          <li><a href="#">Tech News</a></li>
+        </ul>
+
+        <!-- Affiliate Marketing Ad Placeholder -->
+        <div class="ad-placeholder">
+          Affiliate Product Recommendation<br>
+          <a href="#">Buy Now!</a>
+        </div>
+
+        <!-- Popular Posts -->
+        <h3>Popular Posts</h3>
+        <ul>
+          <li><a href="#">Why JavaScript is Essential in Web Development</a></li>
+          <li><a href="#">A Guide to Full-Stack Development</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 My Tech Blog</p>
+    <div>
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JS (for responsive functionality, optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

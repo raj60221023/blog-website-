@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode a {
+    color: #90caf9;
+}
+
+body.dark-mode header {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode footer {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .sidebar {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .ad-placeholder {
+    background-color: #333;
+    border-color: #555;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;           /* Remove default padding */
+    margin: 0;            /* Remove default margin */
+    display: flex;        /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the links */
+}
+
+nav li {
+    margin: 0 15px;      /* Add space between links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #00bcd4;       /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+article h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #00bcd4;
+    margin-top: 5px;
+}
+
+/* Button Animations */
+a {
+    color: #00bcd4;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #006064;
+    transform: scale(1.05);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #f7f7f7;
+    padding: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+/* Ad Placeholder */
+.ad-placeholder {
+    background-color: #e7e7e7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 1px dashed #ccc;
+    animation: pulse 3s infinite;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
