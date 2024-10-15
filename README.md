@@ -5,11 +5,7 @@ Welcome to **My Tech Blog**! This is a personal blog dedicated to sharing insigh
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
+ 
 ## Features
 - Dark mode toggle for better readability
 - Responsive design for mobile and desktop views
